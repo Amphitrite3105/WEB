@@ -1,0 +1,151 @@
+  @import url("../import/color.less");
+  @import url("../import/mixins.less");
+  @import url("../less/ren_header.less");
+
+  body{
+    font-family: "Georgia", Serif;
+    background-image: url("../images/pexels-photo-102591.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #201f1d;
+    color: @white;
+  }
+
+
+  div.main_page {
+    margin: auto;
+    .ren_black_border;
+    a{
+      color: @white;
+      text-decoration: none;
+    }
+    h1{
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: none;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-style: italic;
+      font-size: 18px;
+    }
+    &:hover{
+      background: @content;
+      a{
+        color: black;
+      }
+
+    }
+  }
+
+
+
+
+  blockquote.blockquote, .blockquote_min {
+    margin-top: 10px;
+    border-left: none;
+    float: right;
+    p{
+      font-style: normal;
+      font-size: 24px;
+      text-align: right;
+      text-shadow: 3px 5px 3px @beauty_grey;
+    }
+    footer.footer_cite{
+      margin: 0;
+      padding: 0;
+      float: right;
+      background: transparent;
+      height: inherit;
+      p{
+        color: #ffffff;
+        font-style: italic;
+        font-size: 16px;
+        text-shadow: 3px 3px 7px @beauty_grey;
+      }
+    }
+  }
+
+  .blockquote_min{
+    margin-top: 60px;
+    p{
+      font-size: 16px;
+    }
+    footer.footer_cite {
+      position: relative;
+
+      p {
+        font-size: 14px;
+        text-align: right;
+        font-style: italic;
+      }
+    }
+  }
+
+  blockquote footer:before{
+    content: none;
+  }
+
+  div.main {
+    margin-top: 70px;
+    height: auto;
+  img{
+    width: 100%;
+    height: 250px;
+    filter: opacity(0.5);
+  }
+  div.sl {
+    margin: 20px auto;
+    font-size: 24px;
+    font-weight: bold;
+
+    a{
+      margin-left: 30px;
+      border: 1px solid black;
+      box-shadow: 0 0 5px 5px black;
+    }
+    .sl_slide {
+      position: relative;
+    }
+    .sl_zag{
+      margin: 0;
+      padding: 15px;
+
+    }
+    .sl_text {
+      position: absolute;
+      color: #000;
+      bottom: 0;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      border-top: 1px solid black;
+      width: 100%;
+    }
+    .slick-center{
+      box-shadow: 0 0 12px 3px white;
+      border: 1px solid white;
+      img{
+        filter: opacity(1);
+      }
+      .sl_text{
+        h3 {
+          text-shadow: 3px 5px 3px black;
+        }
+        color: #fff;
+        border-top: 1px solid white;
+      }
+    }
+  }
+  }
+
+
+
+
+

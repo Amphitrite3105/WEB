@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Sans-Condense_Bold';
+	src: url('fonts/opensans-condbold-webfont.eot');
+	src: url('fonts/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'), 
+		 url('fonts/opensans-condbold-webfont.woff') format('woff'), 
+		 url('fonts/opensans-condbold-webfont.ttf') format('truetype'), 
+		 url('fonts/opensans-condbold-webfont.svg#open_sans_condensedbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'coconbold';
+    src: url('fonts/cocon_bold-webfont.eot');
+    src: url('fonts/cocon_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cocon_bold-webfont.woff') format('woff'),
+         url('fonts/cocon_bold-webfont.ttf') format('truetype'),
+         url('fonts/cocon_bold-webfont.svg#coconbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'coconlight';
+    src: url('fonts/cocon_light-webfont.eot');
+    src: url('fonts/cocon_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cocon_light-webfont.woff') format('woff'),
+         url('fonts/cocon_light-webfont.ttf') format('truetype'),
+         url('fonts/cocon_light-webfont.svg#coconlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cocon-regularregular';
+    src: url('/fonts/cocon_regular-webfont.eot');
+    src: url('/fonts/cocon_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/cocon_regular-webfont.woff') format('woff'),
+         url('/fonts/cocon_regular-webfont.ttf') format('truetype'),
+         url('/fonts/cocon_regular-webfont.svg#cocon-regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

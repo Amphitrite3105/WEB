@@ -1,0 +1,68 @@
+$(function(){				
+	function lightPodskaz(placeholder){	
+				
+		$('.gray-round').prepend('<span  class="hovTips" style="position:fixed;display:none">'+placeholder+'</span>');
+		$(window).mousemove(function (pos) { 
+			$(".hovTips").css('left',(pos.clientX-6)+'px').css('top',(pos.clientY-40)+'px').css('display','block'); 
+		}); 
+		
+
+	}
+		
+	function hideArea(){
+		$('.hovTips').fadeOut(0, function() {$(this).remove();});
+		$(window).unbind('mousemove')
+		}		
+		
+	$('input.inputTXT').hover(		
+		function(){lightPodskaz($(this).attr('placeholder'));},
+		function(){hideArea()}
+	);	
+	$('textarea.inputTXT').hover(		
+		function(){lightPodskaz($(this).attr('placeholder'));},
+		function(){hideArea()}
+	);		
+		
+});		
+
+	function checkForm(obj){	
+		var return_value = true;
+		var error_msg = "Не корректно или не заполнины обязательные поля:  \n\n";   // объявляем переменную куда будет заносится текст сообщения
+			 
+			 
+			 
+		jQuery.each(obj, function(i, val) {
+
+			if(val.type !== "hidden" && val.type !=="submit"){
+			
+
+			var mask = $(this).attr('data-mask-id').split('-');
+			var error = $(this).attr('data-error');
+			var value = $(this).attr('value');
+			var smallmask = new Object();
+			
+				smallmask["w"] = "^[a-zа-яё0-9-_,.+\\s]{"+mask[0]+","+mask[1]+"}$";
+				smallmask["d"] = "^[0-9-_+\\s]{"+mask[0]+","+mask[1]+"}$";
+				smallmask["p"] = "^[0-9-_)(+\\s]{"+mask[0]+","+mask[1]+"}$";
+				smallmask["m"] = "[0-9a-z_]+@[0-9a-z_^.]+.[a-z]{2,3}";
+			
+			
+			
+
+			var re = new RegExp(smallmask[mask[2]],"i");
+
+			if(re.exec(value) == null){
+				//alert(value);
+				error_msg += "- "+error+". Это поле должно быть не меньше "+mask[0]+" и не больше "+mask[1]+" символов   \n\n";
+				$(this).css("border-color","#f00");
+				return_value = false;
+			} else {$(this).css("border-color","#ddd");}
+
+
+			
+			}
+		});
+
+        if(!return_value) { alert(error_msg);}
+        return return_value;
+    }

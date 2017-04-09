@@ -1,0 +1,83 @@
+#carousel{
+    margin-top: -20px;
+}
+a.spoiler:after{
+    content: " [-]";
+}
+a.spoiler.collapsed:after{
+    content: " [+]";
+}
+blockquote{
+    text-indent: 1.5em;
+}
+.email-xs, .password-xs{
+   margin-bottom: 5px;
+}
+.nav-tabs{
+    margin-bottom: 15px;
+}
+.thumbnail{
+    height: auto;
+}
+
+
+@media screen and (max-width: 12000px){
+    .indicators .min-img,
+    .indicators .active.min-img{
+        width: 150px;
+        height: 100px;
+    }
+    .item .carousel-caption{
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 992px) and (max-width: 1199px){
+    .indicators .min-img,
+    .indicators .active.min-img{
+        width: 100px;
+        height: 65px;
+    }
+    .item .carousel-caption{
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px) and (max-width: 991px){
+    .indicators .min-img,
+    .indicators .active.min-img{
+        width: 100px;
+        height: 70px;
+    }
+    .item .carousel-caption{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .indicators .min-img,
+    .indicators .active.min-img{
+        width: 55px;
+        height: 35px;
+    }
+    .item .carousel-caption{
+        height: 150px;
+    }
+}
+
+.breadcrumb > li + li:before{
+    content: "\f178";
+    font-family: "FontAwesome";
+    color: #2b669a;
+}
+.breadcrumb{
+    background-color: #ffffff;
+}
+
+.active.min-img{
+  border: 2px solid #ffffff;
+}
+li{
+    list-style-type: none;
+}

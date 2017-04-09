@@ -1,0 +1,1 @@
+if (typeof pluso != "undefined") pluso.setCounter("15", "http://pattern4site.ru/priroda/", undefined, {"facebook":1,"twitter":1,"vkontakte":9,"odnoklassniki":1,"moimir":1}, undefined);

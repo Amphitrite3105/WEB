@@ -1,0 +1,15 @@
+@media screen and (max-width: 767px) {
+  .tabs .navigation span {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 991px) {
+  .tabs .navigation a:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 12000px) {
+  .tabs .navigation a:before {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,18 @@
+body {
+  font-family: "Georgia", Serif;
+  background-image: url("../images/pexels-photo-102591.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #201f1d;
+  color: #ffffff;
+}
+body h1 {
+  font-size: 60px;
+  font-style: italic;
+  text-align: center;
+}
+.main {
+  margin: 20px auto;
+}
